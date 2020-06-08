@@ -1,0 +1,18 @@
+$radio:375/10;
+
+@function rem($px){
+  @return $px/$radio+rem
+};
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
